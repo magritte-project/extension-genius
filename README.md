@@ -2,6 +2,8 @@
 
 A Magritte extension for genius.com
 
+[![Test](https://github.com/magritte-project/extension-genius/actions/workflows/test.yml/badge.svg)](https://github.com/magritte-project/extension-genius/actions/workflows/test.yml)
+
 ## Installation
 
 ### For Developers
