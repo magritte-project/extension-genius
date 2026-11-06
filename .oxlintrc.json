@@ -1,5 +1,5 @@
 {
-    "$schema": "./web/node_modules/oxlint/configuration_schema.json",
+    "$schema": "./node_modules/oxlint/configuration_schema.json",
     "options": {
         "typeAware": true
     },
@@ -22,10 +22,5 @@
                 ]
             }
         ]
-    },
-    "ignorePatterns": [
-        "web/src/routeTree.gen.ts",
-        "web/src/api/openapi.d.ts",
-        "packages/api/src/openapi/**/*.gen.ts"
-    ]
+    }
 }
