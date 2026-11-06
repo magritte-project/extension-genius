@@ -1,4 +1,4 @@
-import { ExtensionHost } from "@magritte/sdk"
+import { ExtensionHost, beginForwardingMeaningfulUIEvents } from "@magritte/sdk"
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query"
 import { StrictMode } from "react"
 
@@ -14,6 +14,9 @@ try {
     const extensionHost = await ExtensionHost.connect({
         extensionId: "magritte.genius",
     })
+
+    // Set up UI event forwarding
+    await beginForwardingMeaningfulUIEvents(extensionHost)
 
     // Set up tanstack query
     const queryClient = new QueryClient()
