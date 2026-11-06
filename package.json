@@ -9,33 +9,36 @@
         "build": "vite build && tsc",
         "clean": "rm -rf dist",
         "serve": "vite preview",
-        "test": "vitest run",
+        "test": "vitest run --passWithNoTests",
         "format": "oxfmt",
         "lint": "oxlint",
-        "check": "oxlint && oxfmt --check"
+        "check": "oxlint && oxfmt --check",
+        "check-types": "tsc --noEmit"
     },
     "dependencies": {
-        "@magritte/api": "git+ssh://git@github.com/decarbonization/magritte#path:/packages/api",
-        "@magritte/rpc": "git+ssh://git@github.com/decarbonization/magritte#path:/packages/rpc",
-        "@magritte/sdk": "git+ssh://git@github.com/decarbonization/magritte#path:/packages/sdk",
-        "@phosphor-icons/react": "2.1.10",
-        "@tanstack/react-query": "5.101.4",
-        "classnames": "2.5.1",
-        "react": "19.2.8",
-        "react-dom": "19.2.8",
-        "vite-plugin-server-actions": "1.5.0",
-        "zod": "4.4.3"
+        "@magritte/api": "^0.2.0",
+        "@magritte/rpc": "^0.2.0",
+        "@magritte/sdk": "^0.2.0",
+        "@phosphor-icons/react": "^2.1.10",
+        "@tanstack/react-query": "^5.101.4",
+        "classnames": "^2.5.1",
+        "dotenv": "^18.0.9",
+        "react": "^19.2.8",
+        "react-dom": "^19.2.8",
+        "vite-plugin-server-actions": "^1.5.0",
+        "zod": "^4.4.3"
     },
     "devDependencies": {
-        "@types/node": "26.1.2",
-        "@types/react": "19.2.17",
-        "@types/react-dom": "19.2.3",
-        "@vitejs/plugin-react": "6.0.4",
-        "oxfmt": "0.60.0",
-        "oxlint": "1.75.0",
-        "typescript": "7.0.2",
-        "vite": "8.1.5",
-        "vitest": "4.1.10"
+        "@types/node": "^26.1.2",
+        "@types/react": "^19.2.17",
+        "@types/react-dom": "^19.2.3",
+        "@vitejs/plugin-react": "^6.0.4",
+        "oxfmt": "^0.60.0",
+        "oxlint": "^1.75.0",
+        "oxlint-tsgolint": "^7.0.2004",
+        "typescript": "^7.0.2",
+        "vite": "^8.1.5",
+        "vitest": "^4.1.10"
     },
     "packageManager": "pnpm@12.8.1"
 }

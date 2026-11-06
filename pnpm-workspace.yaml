@@ -1,3 +1,7 @@
 allowBuilds:
-  '@scarf/scarf': true
-  esbuild: true
+    "@scarf/scarf": true
+    esbuild: true
+minimumReleaseAgeExclude:
+    - "@magritte/api@0.2.0"
+    - "@magritte/rpc@0.2.0"
+    - "@magritte/sdk@0.2.0"
